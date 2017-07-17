@@ -1,5 +1,5 @@
 #!/bin/bash
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-15s\n' "Criar Usuário SSH" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-15s\n' "Criar Usuário openVPN" ; tput sgr0
 echo ""
 read -p "Nome do usuário: " username
 awk -F : ' { print $1 }' /etc/passwd > /tmp/users 
