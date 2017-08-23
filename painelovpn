@@ -19,7 +19,6 @@ service apache2 restart
 mysql -h localhost -u root -proot -e "CREATE DATABASE painel"
 apt-get install unzip -y
 cd /var/www/html
-rm index.html
 wget https://raw.githubusercontent.com/Alissongithub/openVPN/master/painelovpn.zip
 unzip painelovpn.zip
 rm painelovpn.zip
