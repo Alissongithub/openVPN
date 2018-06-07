@@ -1,16 +1,12 @@
 #!/bin/bash
 apt-get update -y
 apt-get upgrade -y 
-apt-get install git wget nano speedtest-cli squid3 -y
 wget https://raw.githubusercontent.com/Alissongithub/openVPN/master/ovinstall
 chmod +x ovinstall
 ./ovinstall
 rm ovinstall
 rm -rf /etc/ssh/sshd_config
 wget https://raw.githubusercontent.com/Alissongithub/openVPN/master/sshd_config -O /etc/ssh/sshd_config
-wget https://raw.githubusercontent.com/Alissongithub/openVPN/master/squidconf
-chmod +x squidconf
-./squidconf
 wget https://raw.githubusercontent.com/Alissongithub/openVPN/master/payloads -O /etc/payloads
 wget https://raw.githubusercontent.com/Alissongithub/openVPN/master/AlterarSenha.sh -O /bin/alterarsenha
 chmod +x /bin/alterarsenha
